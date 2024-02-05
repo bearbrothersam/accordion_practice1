@@ -1,0 +1,201 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colors to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colors to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border color to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  color: #909090;
+  text-decoration: none;
+}
+
+.faq {
+  background: #f3f5f6;
+}
+.faq .s-ttl {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.faq .s-ttl .en {
+  color: #d45d61;
+  font-size: 0.8rem;
+}
+.faq .s-ttl .ja {
+  margin-top: 5px;
+  font-size: 1.25rem;
+}
+.faq-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  width: 85%;
+  margin: 0 auto;
+}
+.faq-wrapper__box {
+  border-bottom: 1px solid #e0e3e6;
+}
+.faq-wrapper__box__ttl {
+  font-weight: 700;
+  line-height: 1.6;
+  position: relative;
+  padding: 28px 50px 28px 84px;
+}
+.faq-wrapper__box__ttl:before, .faq-wrapper__box__ttl:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transition: all 0.3s;
+}
+.faq-wrapper__box__ttl.open::before {
+  transform: translate(0, -50%) rotate(0);
+}
+.faq-wrapper__box__ttl:before {
+  transform: translate(0, -50%) rotate(-180deg);
+}
+.faq-wrapper__box__ttl.open::after {
+  transform: translate(0, -50%) rotate(0);
+}
+.faq-wrapper__box__ttl:after {
+  transform: translate(0, -50%) rotate(-90deg);
+}
+.faq-wrapper__box__ttl span:before {
+  content: "Q";
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  border-radius: 50%;
+  background: #eb6353;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  font-weight: 600;
+}
+.faq-wrapper__box__ans {
+  display: none;
+  transition: all 0.5s ease;
+  background: #f0f5f9;
+}
+.faq-wrapper__box__ans__con {
+  line-height: 2;
+  position: relative;
+  padding: 28px 50px 28px 84px;
+}
+.faq-wrapper__box__ans__con:before {
+  content: "A";
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  border-radius: 50%;
+  color: #eb6353;
+  background: #ffffff;
+  width: 36px;
+  height: 36px;
+  font-weight: 600;
+}
